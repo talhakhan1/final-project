@@ -1,0 +1,775 @@
+
+/**************Clearfix Hack********/
+
+
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;  /*note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;  /*note the padding around a left floated image */
+}
+
+/******************************************
+ BASE STYLES
+*****************************************
+*/
+body {
+     color: #000;
+    /* font-size: 12px;*/
+     /*line-height: 1.4;*/
+     font-family: Helvetica, Arial, sans-serif;
+     /*background: url(..//images/background-img.jpg) no-repeat top center #131e27;*/
+     /*background-size: cover;*/
+     /*background-image: cover;*/
+}
+/*.background{
+	background: url(..//images/background-img.jpg) no-repeat top center #131e27;
+     background-size:cover;
+     padding-bottom:300px;
+     clear:both;
+*/     /*margin:0px;
+     padding-left:50px*/
+  
+}
+
+
+/******************************************
+/* LAYOUT
+/******************************************
+
+//* Center the container */
+
+/*#header_container { 
+	background:#eee;
+	border:1px solid #666; 
+	height:60px; 
+	left:0; 
+	position:fixed; 
+	width:100%; 
+	top:0; }
+*/
+
+/*#container {
+  width:cover;
+  background:#eee;
+  border:1px solid #666;
+  height:60px;
+  left:0;
+  position:fixed;
+  width:100%;
+  top:0;
+}
+/*#mainPage{
+	line-height: 60px;
+	margin:0 auto;
+	width:940px;
+	text-align:center;
+}
+
+/**** Header Style *******/
+
+#bridePage{
+	/*background-image:url(..//images/sky.jpg);*/
+/*background-color: skyblue;*/
+}
+
+
+
+#mainPage header{
+	/*position: fixed;*/
+	width:auto;
+	opacity:0.05;
+	/*border:auto;*/
+	/*background-image:url(..//images/bkg.jpg);*/
+	background-size: cover;
+	/*padding-top: 10px;*/
+	padding-bottom:10px;
+	font-family:"apple Chancery" , "Zapf Chancery" , cursive;
+
+}
+#mainPage header:hover{
+	opacity:1;
+	background-color: white;
+	padding-top:10px;
+	padding-bottom:0px;
+	position:fixed;
+}
+#customerInfo{
+	padding-top:10px;
+	padding-bottom:0px;
+	border-width:0px;
+}
+#signIn{
+	float:right;
+	font-size:12px;
+	padding-right:10px;
+
+}
+#newLogin {
+	float:left;
+	font-size:12px;
+	margin-left:10px;	
+}
+.sign{
+	text-decoration:none;
+	color: black;
+
+}
+ .sign:hover{
+	font-size:13px;
+	text-decoration: underline;
+	color: blue;
+}
+.login{
+	text-decoration:none;
+	color: black;
+}
+
+.logo{
+	padding-top:25px;
+	margin-left:39%;
+	font-size:40px;
+	/*font-weight: 800;*/
+	/*font-family:Helvetica;*/
+	font-family:"Papyrus" , fantasy;
+}
+.btn{
+	/*font-family: times;*/
+	font-size:18px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+
+}
+
+#bride{
+	margin-top:20px;
+	float:right;
+	padding-right:30%;
+	/*font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;*/
+}
+#groom{
+	margin-top:20px;
+	float:left;
+	padding-left:30%;
+	/*font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;*/
+	
+}
+/*.qoute1{
+	padding-bottom: 24px;
+	margin:70px;
+	opacity:0.25;
+	width:200px;
+	height:200px;
+
+}
+*/.qoute1{
+	opacity:0.75;
+	width:200px;
+	line-height:45px;
+	color: white;
+	font-size:40px;
+	text-align:center;
+	font-family:"apple Chancery" , "Zapf Chancery" , cursive;
+	padding-left:70px;
+	padding-top:6;fow0px;
+	margin-top:100px;
+	padding-bottom: 24px;
+	margin:70px;
+	opacity:0.5;
+	/*width:200px;*/
+	height:200px;
+
+
+}
+
+/*****header Style Ends*****/
+/*******sing up styling starts here*******/
+
+nav ul.landingPage {
+	font-size:15px;
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	position: relative;
+  	float: right;
+  	background:transparent;
+  	/*border-bottom:0px;
+  	border-radius:0px;*/  
+  	font-family: "Papyrus" , fantasy;  
+  	/*padding-top: 10px;*/
+}
+
+nav li {
+  float: left;          
+}
+
+nav #login {
+  border-right: 0px solid #ddd;
+  box-shadow: 0px 0 0 #fff;  
+}
+nav #login-trigger,
+nav #signup a {
+  display: inline-block;
+  *display: inline;
+  *zoom:0;
+  height: 25px;
+  line-height: 25px;
+  /*font-weight: bold;*/
+  padding: 0 8px;
+  text-decoration: none;
+  color: #444;
+  /*text-shadow: 0 1px 0 #fff; */
+}
+
+nav #signup a {
+  border-radius: 0 0px 0px 0;
+}
+
+nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+  background: #fff;
+}
+
+nav #login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 999;    
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+  right: 0;
+  width: 250px;  
+}
+
+/*--------------------*/
+
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 1px 0;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+/*--------------------*/
+
+#login #actions {
+  margin: 10px 0 0 0;
+}
+
+#login #submit {    
+  background-color: #d14545;
+  background-image: linear-gradient(top, #e97171, #d14545);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+  border: 1px solid #7e1515;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: 100px;
+  /*padding-bottom:30px;*/
+  cursor: pointer;
+  font-family: "Papyrus" , fantasy;
+  /*font: bold 14px Arial, Helvetica;*/
+  color: #fff;
+}
+
+#login #submit:hover,
+#login #submit:focus {    
+  background-color: #e97171;
+  background-image: linear-gradient(top, #d14545, #e97171);
+} 
+
+#login #submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+/*#login #submit::-moz-focus-inner {
+  border: none;
+}*/
+
+#login label {
+  float: right;
+  line-height: 30px;
+}
+
+#login label input {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+/****Slider Styling Starts Here*******/
+/*.content{
+	height:100px;
+}*/
+.slides{
+	height: 10px;
+}
+.flexslider{
+	height:850px;
+  	width:;
+  	padding:0%;
+  	left: 0;
+  	bottom: 0;
+  	/*background: rgba(0,0,0,.5);*/
+  	color: #fff;
+  	/*text-shadow: 0 -1px 0 rgba(0,0,0,.3);*/
+  	/*font-size: 14px;
+  	line-height: 18px;
+*/}
+
+./*slide1{
+	width:100%;
+	height:20px;	
+	clear:both;
+}*/
+.qoute{
+	padding-bottom:0px;
+
+}
+
+
+
+/********content and Images Style********/
+.content1{
+	text-align: center;
+	padding-top:0px;
+	padding-bottom:50px;
+	font-size:25px;
+	font-family: "Papyrus" , fantasy;
+	/*font-family: "Courier New" , Courier , monospace; */
+}
+.content1 p{
+	padding-top:0px;
+	padding-bottom:10px; 
+
+}
+.content1 hr{
+	margin-left:340px;
+	margin-right:340px; 
+}
+.images{
+	background-color: lightgrey;
+	padding-top:0px;
+	padding-bottom:20px;
+	align-content:center;
+	height:250px;
+	clear:both;
+	padding-left:300px;
+
+
+
+}
+.tailor{
+	width:200px;
+	float:left;
+	margin-left:30px;
+	border-style:circle;
+	border-radius: 50%;
+}
+#sewingMachine{
+	padding-top: 20px;
+	padding-bottom:20px;
+	width:270px;
+	border-radius:50%;
+	margin-left:-20px;
+}
+#equipment{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*width:270px;*/
+	margin-right:-50px;
+	border-radius: 50%;
+	position:relative;
+}
+
+/******************Content And images style end*****************/
+/*****************Email Subscription Style Starts*************/
+
+.email{
+	padding-bottom: 20px;
+}
+
+#emailSubscription{
+	margin-top:0px;
+	width:540px;
+	height:18px;
+}
+/*#subscribe{
+	font-size: 15px;
+	height:25px;
+	margin-left: 0px;
+	margin-right:100px;
+}
+*/
+.email p{
+	font-family:"Papyrus" , fantasy;
+	font-size:30px;
+	padding-top:10px;
+
+}
+
+
+/**************Email Subscription Ends here****************/
+/*********************Footer Starts Here*******************/
+.footer{
+	background-color: grey;
+	padding-top:2%;
+	padding-bottom:3%;
+	font-family: "Courier New" , Courier , monospace;
+	color:white;
+}
+.links{
+	float:left;
+	clear:both;
+}
+.links li{
+	display:inline;
+	font-size:15px;
+}
+.footer p{
+	padding-top:10px;
+	font-size: 12px;
+	clear:both;
+}
+.socialMedia{
+	float:right;
+	margin-right:1%;
+	padding-top:1%;
+
+}
+
+.socialLinks{
+	float:right;
+	/*clear:both;*/
+	margin-left: 20px;
+	border-radius:50%;
+}
+#facebook{
+	width:20px;
+	height:20px;
+}
+#insta{
+	width:20px;
+	height:20px;
+}
+#twitter{
+	width:20px;
+	height:20px;
+}
+
+
+/*****************Footer Ends Here****************/
+/**************signinPage Styling starts here*************/
+
+.signupLogo{
+	text-align: center;
+	font-size:35px;
+	font-family:"apple Chancery" , "Zapf Chancery" , cursive;
+	padding-top: 30px;
+}
+.signupList{
+
+	font-family:"apple Chancery" , "Zapf Chancery" , cursive;
+}
+.homeContact{
+	padding-top:30px;
+}
+
+.home{
+	float:left;
+	padding-top: 20px;
+	padding-right: 30px;
+	margin-left:400px;
+
+}
+.contact{
+	float:right;
+	margin-left:350px;
+	padding-top: 20px;
+}
+.enterName{
+  width:400px;
+  float:right;
+  /*margin-left:150px;*/
+  border-top:none;
+  border-right: none;
+  border-left:none;
+  border-color: black;
+  border-bottom-style:1px;
+}
+
+/*.email{
+  width:400px;
+  margin-left:150px;
+  border-top:none;
+  border-right: none;
+  border-left:none;
+  border-color: black;
+  border-bottom-style:1px;
+}
+*/
+#container{
+	background:linear-gradient(lavender, white);
+
+}
+.form{
+  width:60%;
+  margin:0 auto;
+  padding-top:100px;
+  line-height:40px;
+
+}
+.services1{
+  padding-top:40px;
+  padding-bottom:40px;
+  clear:both;
+  width:800px;
+}
+.services2{
+  width:50px;
+  height:100px;
+
+}
+
+.register{
+  clear:both;
+}
+.services{
+  float:right;
+  margin-right: 30px;
+  padding-bottom:20px;
+  clear:both;
+}
+
+.button{
+  margin-top:40px;
+}
+.terms{
+  margin-top:40px;
+}
+/**************Signing Page Styling Ends Here*************/
+/**/
+/**************Bride Designer Page Styling starts Here***************/
+/**/
+/*****Header Styling Starts Here*********/
+.mobile-nav-icon{
+	border:1px;
+	padding-top:10px;
+	/*background-color:black;*/
+	width:30px;
+	float: right;
+	height:10px;
+	margin-top:10px;
+	margin-right: 20px;
+	display: none;
+
+	/*display: none;*/
+}
+/*.fa{
+	color:black;
+
+}
+*/.menuBride{
+	padding-top:5%;
+	list-style: none;
+	margin-left:5%;
+	margin-right:5%;
+	clear:both;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+#navGroom a:hoover:{
+	float:left;
+}
+#navBride{
+	float:left;
+	margin-left:20%;
+}
+#navHome{
+	float:right;
+	margin-right:20%;
+}
+#navLogout{
+	float:right;
+}
+/******Header Styling Ends Here***********/
+/*****Main Body Styling starts here********/
+
+
+.addImage{
+
+	width:200px;
+	height:250px;
+}
+
+.sideBar{
+	height:300px;
+	float:right;
+	width:250px;
+	/*padding-right:200px;*/
+	margin-right:20px;
+	margin-top:-85%;
+}
+
+
+.fa-bars{
+	display: none;
+}
+#brideDesignerList{
+	margin-bottom:10px;
+	/*background:linear-gradient( skyblue, green);*/
+	/*float:left;*/
+	width:100%;
+
+}
+.designerAsifa{
+	width:50%;
+	line-height:165%;
+	float:left;
+	/*margin-right:10%;*/
+	margin-left: 10px;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+.asifa{
+	float:left;
+	width:19%;
+	height:250px;
+	margin-left: 10px;
+}
+.designerBio{
+	padding-top:30px;
+	/*height:200%;*/
+	/*padding-bottom:10px;*/
+	font-size:14px;
+	clear:both;
+
+}
+.mobile-nav-designerBio
+{
+	display:none;
+}
+/*****Main Body Styling Ends Here********/
+/*****Footer Styling Starts Here********/
+.footer{
+	margin-top: 2%;
+}
+.footer p{
+	padding-top:2%;
+	font-size: 12px;
+	clear:both;
+	text-align: center;
+}
+
+
+
+
+/****Footer Styling Ends Here********/
+/*****Media Queries for bride designer Page********/
+@media (max-width: 698px){
+	.logo{
+		float: left;
+		font-size:18px;
+		margin-left: 10px;
+	}
+
+	.menuBride{
+		display: none;
+	}
+	.designerAsifa{
+		display: none;
+	}
+	.asifa1{
+		text-align:center;
+		padding-left:0px;
+		width:auto;
+		/*margin-left:80px;*/
+		clear:both;
+
+
+	}
+	.asifa{
+		/*padding-left:120px;*/
+		/*margin-right:px;*/
+		/*margin-left:30px;*/
+		align-items: center;
+		/*padding-bottom:5px;*/
+		height:140px;
+		clear:both;
+		text-align: center;
+		float:none;
+	}
+	.mobile-nav-designerBio{
+		width:100%;
+		/*margin-left:40px;*/
+		/*padding-left:120px;*/
+		text-align:center;
+		/*padding-top:10px;*/
+		display: inherit;
+
+	}
+	.designerBio{
+		padding-top:20px;
+		padding-bottom: 10px;
+
+	}
+	.links{
+		display: none;
+	}
+	.socialMedia span{
+		display: none;
+		padding-top: 0%;
+		margin-right: 0%;
+	}
+	.socialLinks{
+		display: none;
+		margin-right:50%;
+		padding-right:25%;
+		width:100%;
+	}
+	.mobile-nav-icon{
+	display:initial;
+
+	/*.copyRights{
+		width:auto;*/
+	}
+}
